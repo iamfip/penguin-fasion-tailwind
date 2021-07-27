@@ -7,22 +7,42 @@
     <title>Document</title>
     <!-- tailwind csss -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="bg-yellow-50" > 
         <div class="flex justify-around py-10 content-center">
-            <ul>
-                <li> <img class="w-80" src="icons/Group 3.png" alt=""></li>
+            <ul >
+                <li class=" hover:bg-yellow-100 rounded " > <img class="w-80" src="icons/Group 3.png" alt=""></li>
             </ul>   
             <ul class="text-2xl text-gray-700 font-medium  flex space-x-9">
-                <li>Home</li>
-                <li>Product</li>
-                <li>About us</li>
-                <li>Contact us</li>
+                <li><a class=" hover:bg-yellow-300 rounded p-3" href="#">Home</a></li>
+                <li><a class=" hover:bg-yellow-300 rounded p-3"href="#">Contact us</a></li>
+                <li><a class=" hover:bg-yellow-300 rounded p-3" href="#">Product</a></li>
+                <li><a class=" hover:bg-yellow-300 rounded p-3"href="#">About us</a></li>
+                
             </ul>
         </div>
+
+        <!-- Header Banner Section  -->
+        <section class="flex items-center justify-around ">
+            <div class="space-y-10 ">
+                <h1 class="text-6xl font-sans">
+                    <span class="text-yellow-400 uppercase font-medium">Be the penguins</span> <br>
+                    <span class="text-gray-700 uppercase font-medium">of winter </span>
+                </h1>
+                <p class="flex-wrap w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <button class="inline-flex uppercase bg-green-500 hover:bg-green-700 p-6 text-white rounded-xl border focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-80 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    <h2 class="font-medium">Buy Now </h2></button>
+            </div>
+            <div>
+                <img src="images/model.png" alt="">
+            </div>
+        </section>
     </header>
 </body>
 </html>
