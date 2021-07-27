@@ -1,2 +1,2 @@
-        [penguin-fasion-tailwind]
+  # penguin-fasion-tailwind
         
